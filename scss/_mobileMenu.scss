@@ -7,7 +7,7 @@
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-#hamburgerBtn { display: none; } /* hide the navigation button by default */
+#hamBTN { display: none; } /* hide the navigation button by default */
 
 @media only screen and (max-width: 35rem) {
 
@@ -55,7 +55,10 @@
         font-family: Verdana;
         font-weight: normal;
 	}
-    #primaryNAV li.active a{background-color: rgba(0,0,0,0.25);}
+    #primaryNAV li.active a {
+		background-color: rgba(0,0,0,0.25);
+	}
+
 	#primaryNAV li a {
 		display: block;
 		width: 100%;
@@ -66,35 +69,47 @@
 		text-decoration: none;
 		border-top: 1px solid rgba(0,0,0,.2);
 	}
+
 	#primaryNAV li a:hover {
 		background-color: rgba(0,0,0,.5);
 	}
 
 	/* Toggle the navigation bar to expand down  */
-	#primaryNAV.open {height: auto;}
+	#primaryNAV.open {
+		height: auto;
+	}
 
 	/* Submenus – optional .parent class indicates dropdowns */
-	#primaryNav > li:hover > a {background: rgba(0,0,0,.5);}
+	#primaryNav > li:hover > a {
+		background: rgba(0,0,0,.5);
+	}
+
 	#primaryNAV li.parent > a:after {
         font-size: .75rem;
 		content: "\25BC";
 		color: rgba(255,255,255,.5);
 		float: right;
 	}
+
 	#primaryNAV li.parent > a:hover {
 		background: rgba(0,0,0,.75);
 	}
+
     /*hide the sub menu items by default*/
 	#primaryNAV li ul {
 		display: none;
 		background: rgba(0,0,0,.3);
 		padding: 0;
 	}
+
 	#primaryNAV li ul a {
 		border-top: solid 1px rgba(0,0,0,0.2);
 		font-size: 12px;
 		padding: 10px 5%;
 		font-weight: normal;
 	}
-	#primaryNAV li:hover ul {display: block;}
+
+	#primaryNAV li:hover ul {
+		display: block;
+	}
 } /* End Mobile Styles */
