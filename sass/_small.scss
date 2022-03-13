@@ -1,0 +1,191 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $fontFamily;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	display: flex;
+	// flex-direction: column;
+	align-items: center;
+	background-color: lighten($primaryColor, 30%);
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 300;
+		margin-bottom: 1rem;
+	}
+	
+	img {
+		padding: 1rem 0 .5rem 2%;
+		display: block;
+	}
+	border-bottom:solid 1px $primaryColor;
+}
+
+// end header
+
+nav{
+
+ul li.active a {
+	background-color: $secondaryColor
+}
+
+}
+//----------end NAV
+
+
+
+
+/* MAIN  */
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 300;
+		margin-top: 1rem;
+	}
+
+
+
+} // end main
+
+fieldset {
+	border-radius: .8em;
+	margin: 1.5em 0;
+	border: $primaryColor solid 1px;
+}
+
+legend {
+	color: $thirdColor;
+	padding: .5em;
+	margin-left: 3 * $gutter;
+	border: none;
+}
+
+.field, div {
+	display: block;
+	padding-top: 1rem;
+	color: $primaryColor;
+	font-size: .8rem;
+}
+
+label {
+	display: block;
+	margin: .5em;
+
+	span {
+		display: block;
+		font-size: .8em;
+		color: $primaryColor;
+		padding: .9em 0 .2em 0;
+	}
+
+}
+.BTN {
+	background-color: darken($primaryColor, 30%);
+	color: white;
+	border-radius: 50px;
+	padding: 0 0.25rem;
+	margin: 1rem;
+	margin-left: 2rem;
+	width: 96%;
+	max-width: 17rem;
+	font-family: $fontFamily;
+	font-size: 25px;
+}
+
+
+input {
+	-webkit-appearance: none;
+	display: block;
+	color: #555;
+	border: none;
+	padding: 1rem;
+	border-radius: 50px;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 20rem;
+	background-color: lighten($primaryColor, 43%);
+}
+
+select {
+	font-size: 1rem;
+	border: none;
+	border-radius: 50px;
+	padding: .75rem;
+	width: 100%;
+	max-width: 20rem;
+}
+
+input:required {
+	border-left: 20px solid red;
+}
+
+input:required:valid {
+	border-left: green solid 20px;
+}
+
+
+.radio {
+	width: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	input {
+		display: block;
+		color: none;
+	}
+}
+
+
+
+/* identifies all required fields */
+
+
+input:required {
+	background-position: 4px -61px;
+}
+
+input:focus:invalid {
+	background-position: 4px -111px;
+}
+
+input:focus:valid {
+	background-color: #fff;
+	background-position: 4px -161px;
+}
+
+
+.radio {
+	// display: block;
+	color: black;
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+/*----------- FOOTER --------------*/
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

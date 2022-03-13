@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700;900&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link href="css/styles.css" rel="stylesheet">
+<!-- CSS -->
+
+
+
+     
+</head>
+<body>
+
+<!-- HEADER STARTS HERE -->
+	<header>
+   	<img src="images/logo.png" alt="">
+    	<h1>Swag Shop</h1>
+    </header>
+    
+    
+<!-- NAV STARTS HERE -->
+	<nav class="clearfix">
+
+  	<button id="hamBTN"></button>
+	  
+   		<ul id="primaryNAV">
+			<li><a href="index.html">Home</a></li>
+			<li class="parent"><a href="index.html">Products</a>
+				<ul>
+					<li><a href="#">Shirts</a></li>
+					<li><a href="#">Hoodies</a></li>
+					<li><a href="#">Masks</a></li>
+					<li><a href="#">Hats</a></li>
+				</ul>
+			</li>
+			<li class="parent"><a href="index.html">Deals</a>
+				<ul>
+					<li><a href="#">50% off</a></li>
+					<li><a href="#">30% all itmes</a></li>
+					<li><a href="#">March Madness Deals</a></li>
+				</ul>
+			</li>
+			<li class="parent active"><a href="index.html"> Order</a>
+			<ul>
+				<li><a href="#">Water Bottles</a></li>
+				<li><a href="#">Hats</a></li>
+				<li><a href="#">Shirts</a></li>
+				</ul>
+			</li>
+			<li><a href="index.html">Customer Reviews</a></li>
+		</ul>	
+	</nav>
+
+    
+    
+<!-- MAIN STARTS HERE -->
+	<main>
+
+<h1>Order</h1>
+
+
+
+
+
+		<form action="" method="POST" enctype="multipart/form-data" name="attend" id="conference">
+
+			<fieldset>
+				<legend><span>Customer Information</span></legend>
+			<label><span>Full Name*</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+			<label><span>Phone*</span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label> 
+			<label><span>Email*</span><input name="email" type="email" value="" placeholder="name@gmail.com" required></label> 
+			</fieldset>
+
+			<fieldset>
+					<legend><span>Swag Information</span></legend>
+				<label><span>Date Needed</span><input name="company" type="text"></label> 
+				<label><span>Business Name</span><input name="webURL" type="url" placeholder=""></label> 
+				<label><span>Business URL</span><input name="quantity" ></label> 
+				
+				
+				<label class="field"><span>Color</span></label> 
+                <!-- <label class="field"><span>Please Select &#9662;</span></label> -->
+                <select name="subject">
+					<option value="">Please Select</option>
+                    <option value="color">Red</option>
+                    <option value="color">Blue</option>
+                    <option value="color">White</option>
+                </select>
+				
+				<label class="field"><span>Quantity</span><input type="text" name="quantity"></label>
+
+				<div>Material</div>
+                <label class="radio"><input type="radio" name="material" value="material">Aluminum</label>
+                <label class="radio"><input type="radio" name="material" value="material">Plastic</label>
+
+				</fieldset>
+
+
+
+				<fieldset>
+					<legend><span>Payment Information</span></legend>
+					<label><span>Name on Card*</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+					<label><span>Credit Card*</span><input name="credit" autocomplete="off" required></label> 
+					<label><span>Expiration Date*</span><input name="exprDate" type="date"></label> 
+				</fieldset>
+
+				<input class="BTN" type="submit" value="Order My Swag">
+
+				<input type="hidden" value="Conference Registration" name="subject">
+				<input name="redirect" type="hidden" value="thanks.html">
+
+			
+
+
+
+
+
+
+
+
+
+
+		</form>
+		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- end content -->
+	</main>
+    
+
+<!-- FOOTER ---------------------------------------------------------------------------------------------->   
+<footer>
+	&copy; 2022 &bull; Jordan Taylor &bull; 000-000-0000 &bull; Login
+</footer>
+<!-- FOOTER ---------------------------------------------------------------------------------------------->   
+    
+
+	
+<script src="js/menuToggle.js"></script>
+</body>
+</html>
