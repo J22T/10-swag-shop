@@ -17,7 +17,7 @@
 	}
     
     nav {
-        position: absolute;
+        // position: absolute;
         top:0;
         left: 0;
         width: 100%;
@@ -25,18 +25,19 @@
 		background-color: $primaryColor; /* change the menu color */
     }
 
+	
 	#hamBTN {
 		display: block;
 		width: 7rem;
         height: 2.75rem;
 		background-image: url('../images/menuOpenWhite.png');
-		background-color: rgba(0,0,0,0.1);
+		background-color: darken($primaryColor, 30%);
 		background-position: 2vw center;
 		background-repeat: no-repeat;
 		border: 0 none;
 	}
 	#hamBTN.open {
-		background: url('../images/menuCloseWhite.png');
+		background: url('..images/menuCloseBlack.png');
         background-position: 2vw center;
 		background-repeat: no-repeat;
 	}

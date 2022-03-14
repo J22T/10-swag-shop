@@ -33,7 +33,7 @@ header {
 
 // end header
 
-nav{
+nav {
 
 ul li.active a {
 	background-color: $secondaryColor
@@ -62,7 +62,7 @@ main {
 
 fieldset {
 	border-radius: .8em;
-	margin: 1.5em 0;
+	margin: 1rem;
 	border: $primaryColor solid 1px;
 }
 
@@ -109,14 +109,14 @@ label {
 input {
 	-webkit-appearance: none;
 	display: block;
-	color: #555;
+	// color: #555;
 	border: none;
-	padding: 1rem;
-	border-radius: 50px;
-	font-size: 1rem;
+	// padding: 1rem;
+	// border-radius: 50px;
+	// font-size: 1rem;
 	width: 100%;
 	max-width: 20rem;
-	background-color: lighten($primaryColor, 43%);
+	// background-color: lighten($primaryColor, 43%);
 }
 
 select {
