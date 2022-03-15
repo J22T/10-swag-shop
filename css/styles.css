@@ -154,7 +154,7 @@ main h1 {
 
 fieldset {
   border-radius: .8em;
-  margin: 1.5em 0;
+  margin: 1rem;
   border: gray solid 1px;
 }
 
@@ -168,13 +168,18 @@ legend {
 .field, div {
   display: block;
   padding-top: 1rem;
+  padding-left: 1rem;
   color: gray;
   font-size: .8rem;
 }
 
+.field div {
+  margin-left: 1rem;
+}
+
 label {
   display: block;
-  margin: .5em;
+  margin-left: 2rem;
 }
 label span {
   display: block;
@@ -231,9 +236,10 @@ input:required:valid {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  display: block;
+  color: black;
 }
 .radio input {
-  display: block;
   color: none;
 }
 
@@ -249,10 +255,6 @@ input:focus:invalid {
 input:focus:valid {
   background-color: #fff;
   background-position: 4px -161px;
-}
-
-.radio {
-  color: black;
 }
 
 /*----------- FOOTER --------------*/
@@ -281,7 +283,7 @@ footer {
   box-sizing: border-box;
 }
 
-#hamburgerBtn {
+#hamBTN {
   display: none;
 }
 
@@ -293,7 +295,6 @@ footer {
   }
 
   nav {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -307,14 +308,14 @@ footer {
     width: 7rem;
     height: 2.75rem;
     background-image: url("../images/menuOpenWhite.png");
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #343434;
     background-position: 2vw center;
     background-repeat: no-repeat;
     border: 0 none;
   }
 
   #hamBTN.open {
-    background: url("../images/menuCloseWhite.png");
+    background: url("..images/menuCloseBlack.png");
     background-position: 2vw center;
     background-repeat: no-repeat;
   }

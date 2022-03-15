@@ -76,6 +76,7 @@ legend {
 .field, div {
 	display: block;
 	padding-top: 1rem;
+	padding-left: 1rem;
 	color: $primaryColor;
 	font-size: .8rem;
 }
@@ -86,7 +87,7 @@ legend {
 
 label {
 	display: block;
-	margin: .5em;
+	margin-left: 2rem;
 
 	span {
 		display: block;
@@ -113,14 +114,14 @@ label {
 input {
 	-webkit-appearance: none;
 	display: block;
-	// color: #555;
+	color: #555;
 	border: none;
-	// padding: 1rem;
-	// border-radius: 50px;
-	// font-size: 1rem;
+	padding: 1rem;
+	border-radius: 50px;
+	font-size: 1rem;
 	width: 100%;
 	max-width: 20rem;
-	// background-color: lighten($primaryColor, 43%);
+	background-color: lighten($primaryColor, 43%);
 }
 
 select {
@@ -146,9 +147,11 @@ input:required:valid {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	display: block;
+	color: black;
 
 	input {
-		display: block;
+		// display: block;
 		color: none;
 	}
 }
@@ -172,10 +175,6 @@ input:focus:valid {
 }
 
 
-.radio {
-	// display: block;
-	color: black;
-}
 
 
 
