@@ -54,7 +54,11 @@ nav {
 		border-left: 1px solid rgba(0,0,0,0.2);
 
 	}
-	ul li {float: left;}
+	
+	ul li {
+		float: left;
+	}
+
 	ul li a { 
 		display: block;
 		border:none; // undo small screen
