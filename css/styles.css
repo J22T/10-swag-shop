@@ -314,7 +314,7 @@ footer {
   }
 
   #hamBTN.open {
-    background: url("..images/menuCloseBlack.png");
+    background: url("..images/menuCloseWhite.png");
     background-position: 2vw center;
     background-repeat: no-repeat;
   }

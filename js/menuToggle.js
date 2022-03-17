@@ -4,5 +4,6 @@ function toggleMenu() {
     document.getElementById("hamBTN").classList.toggle("open");
     document.getElementById("primaryNAV").classList.toggle("open");
 }
+
 var x = document.getElementById('hamBTN');
 x.onclick = toggleMenu; 
