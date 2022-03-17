@@ -169,13 +169,17 @@ legend {
 .field, div {
   display: block;
   padding-top: 1rem;
-  padding-left: 1rem;
+  margin-left: 2rem;
   color: gray;
   font-size: .8rem;
 }
 
 .field div {
   margin-left: 1rem;
+}
+
+select {
+  margin-left: 2rem;
 }
 
 label {
@@ -219,7 +223,7 @@ select {
   font-size: 1rem;
   border: none;
   border-radius: 50px;
-  padding: .75rem;
+  padding: 1rem;
   width: 100%;
   max-width: 20rem;
 }
@@ -239,9 +243,6 @@ input:required:valid {
   justify-content: flex-start;
   display: block;
   color: black;
-}
-.radio input {
-  color: none;
 }
 
 /* identifies all required fields */
