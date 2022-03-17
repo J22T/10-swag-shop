@@ -314,15 +314,6 @@ footer {
     color: white;
   }
 
-  #hamBTN.open {
-    display: block;
-    width: 7rem;
-    height: 2.75rem;
-    background-color: #676767;
-    background-position: 2vw center;
-    background-repeat: no-repeat;
-  }
-
   #hamBTN span:nth-child(1) {
     display: block;
   }

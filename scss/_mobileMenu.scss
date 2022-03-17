@@ -38,15 +38,6 @@
 		color: white;
 	}
 
-	#hamBTN.open {
-		display: block;
-		width: 7rem;
-        height: 2.75rem;
-		background-color: darken($primaryColor, 10%);
-        background-position: 2vw center;
-		background-repeat: no-repeat;
-	}
-
 	#hamBTN span:nth-child(1) {display: block;}
 	#hamBTN span:nth-child(2) {display: none;}
 
