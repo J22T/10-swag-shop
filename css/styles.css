@@ -306,17 +306,37 @@ footer {
     display: block;
     width: 7rem;
     height: 2.75rem;
-    background-image: url("../images/menuOpenWhite.png");
-    background-color: #343434;
+    background-color: #676767;
     background-position: 2vw center;
     background-repeat: no-repeat;
     border: 0 none;
+    font-size: 1.5rem;
+    color: white;
   }
 
   #hamBTN.open {
-    background: url("..images/menuCloseWhite.png");
+    display: block;
+    width: 7rem;
+    height: 2.75rem;
+    background-color: #676767;
     background-position: 2vw center;
     background-repeat: no-repeat;
+  }
+
+  #hamBTN span:nth-child(1) {
+    display: block;
+  }
+
+  #hamBTN span:nth-child(2) {
+    display: none;
+  }
+
+  #hamBTN.open span:nth-child(1) {
+    display: none;
+  }
+
+  #hamBTN.open span:nth-child(2) {
+    display: block;
   }
 
   /* Navigation Bar -------------------------------------------------------- */
