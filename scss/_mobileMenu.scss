@@ -13,13 +13,13 @@
 
 /* Navigation Button  -------------------------------------------------------- */
     body {
-		padding-top: 50px;
+		// padding-top: 50px;
 	}
     
     nav {
-        // position: absolute;
-        top:0;
-        left: 0;
+        position: absolute;
+        top:1;
+        left: 1;
         width: 100%;
         height: 2.75rem;
 		background-color: $primaryColor; /* change the menu color */

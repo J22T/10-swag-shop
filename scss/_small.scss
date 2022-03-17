@@ -14,14 +14,14 @@ body {
 /* HEADER  */
 header {
 	display: flex;
-	// flex-direction: column;
 	align-items: center;
 	background-color: lighten($primaryColor, 30%);
+
 
 	h1 {
 		font-size: 3rem;
 		font-weight: 300;
-		margin-bottom: 1rem;
+		margin-bottom: 1rem
 	}
 	
 	img {
@@ -53,7 +53,7 @@ main {
 	h1 {
 		font-size: 3rem;
 		font-weight: 300;
-		margin-top: 1rem;
+		margin-top: 5rem;
 	}
 
 
@@ -117,16 +117,16 @@ label {
 
 
 input {
-	// -webkit-appearance: none;
-	// display: block;
-	// color: #555;
-	// border: none;
-	// padding: 1rem;
-	// border-radius: 50px;
-	// font-size: 1rem;
-	// width: 100%;
-	// max-width: 20rem;
-	// background-color: lighten($primaryColor, 43%);
+	-webkit-appearance: none;
+	display: block;
+	color: #555;
+	border: none;
+	padding: 1rem;
+	border-radius: 50px;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 20rem;
+	background-color: lighten($primaryColor, 43%);
 }
 
 select {
@@ -154,7 +154,6 @@ input:required:valid {
 	justify-content: flex-start;
 	display: block;
 	color: black;
-
 }
 
 
