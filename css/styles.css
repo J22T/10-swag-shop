@@ -197,9 +197,8 @@ label span {
   border-radius: 50px;
   padding: 0 0.25rem;
   margin: 1rem;
-  margin-left: 2rem;
   width: 96%;
-  max-width: 20rem;
+  max-width: 100%;
   font-family: "Kanit", sans-serif;
   font-size: 2rem;
   border: none;
@@ -473,10 +472,29 @@ footer {
     left: auto;
     margin-left: 0;
   }
+
+  .BTN {
+    background-color: #343434;
+    color: white;
+    border-radius: 50px;
+    padding: 0 0.25rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    width: 96%;
+    max-width: 20rem;
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+    border: none;
+  }
 }
 /* end of media query */
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
+  header, nav, body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   /* HEADER  */
   header {
     display: flex;

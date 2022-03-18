@@ -97,3 +97,25 @@ nav {
 	
 	
 } // end nav
+
+
+
+
+
+
+
+
+
+.BTN {
+	background-color: darken($primaryColor, 30%);
+	color: white;
+	border-radius: 50px;
+	padding: 0 0.25rem;
+	margin: 1rem;
+	margin-left: 2rem;
+	width: 96%;
+	max-width: 20rem;
+	font-family: $fontFamily;
+	font-size: 2rem;
+	border: none;
+}
