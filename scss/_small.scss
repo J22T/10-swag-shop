@@ -61,16 +61,17 @@ main {
 } // end main
 
 fieldset {
-	border-radius: .8em;
-	margin: 1rem;
+	border-radius: 1em;
+	margin: 2rem 0;
 	border: $primaryColor solid 1px;
 	padding: 1rem;
 }
 
 legend {
 	color: $thirdColor;
-	padding: .5em;
-	margin-left: 3 * $gutter;
+	padding: 0 .5em;
+	// margin-left: 3 * $gutter;
+	margin: 0 1rem;
 	border: none;
 }
 
@@ -116,7 +117,7 @@ label {
 }
 
 
-input {
+.input {
 	-webkit-appearance: none;
 	display: block;
 	color: #555;
@@ -129,6 +130,11 @@ input {
 	background-color: lighten($primaryColor, 43%);
 }
 
+.material {
+	display: block;
+	padding-left: 1rem;
+}
+
 select {
 	font-size: 1rem;
 	border: none;
@@ -136,6 +142,7 @@ select {
 	padding: 1rem;
 	width: 100%;
 	max-width: 20rem;
+	background-color: lighten($primaryColor, 43%);
 }
 
 input:required {

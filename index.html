@@ -80,16 +80,16 @@
 
 			<fieldset>
 				<legend><span>Customer Information</span></legend>
-			<label><span>Full Name*</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
-			<label><span>Phone*</span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label> 
-			<label><span>Email*</span><input name="email" type="email" value="" placeholder="name@gmail.com" required></label> 
+			<label><span>Full Name*</span><input class="input" name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+			<label><span>Phone*</span><input  class="input"name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label> 
+			<label><span>Email*</span><input  class="input"name="email" type="email" value="" placeholder="name@gmail.com" required></label> 
 			</fieldset>
 
 			<fieldset>
 					<legend><span>Swag Information</span></legend>
-				<label><span>Date Needed</span><input name="company" type="text"></label> 
-				<label><span>Business Name</span><input name="webURL" type="url" placeholder=""></label> 
-				<label><span>Business URL</span><input name="quantity" ></label> 
+				<label><span>Date Needed</span><input  class="input"name="company" type="text"></label> 
+				<label><span>Business Name</span><input  class="input"name="webURL" type="url" placeholder=""></label> 
+				<label><span>Business URL</span><input  class="input"name="quantity" ></label> 
 				
 				
 				<label class="field"><span>Color</span></label> 
@@ -101,11 +101,11 @@
                     <option value="color">White</option>
                 </select>
 				
-				<label class="field"><span>Quantity</span><input type="text" name="quantity"></label>
+				<label class="field"><span>Quantity</span><input class="input" type="text" name="quantity"></label>
 
 				<div>Material</div>
-                <label class="radio"><input type="radio" name="material" value="material">Aluminum</label>
-                <label class="radio"><input type="radio" name="material" value="material">Plastic</label>
+                <label class="radio"><input class="material" type="radio" name="material" value="material">Aluminum</label>
+                <label class="radio"><input class="material" type="radio" name="material" value="material">Plastic</label>
 
 				</fieldset>
 
@@ -113,12 +113,12 @@
 
 				<fieldset>
 					<legend><span>Payment Information</span></legend>
-					<label><span>Name on Card*</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
-					<label><span>Credit Card*</span><input name="credit" autocomplete="off" required></label> 
-					<label><span>Expiration Date*</span><input name="exprDate" type="date"></label> 
+					<label><span>Name on Card*</span><input class="input" name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+					<label><span>Credit Card*</span><input class="input" ame="credit" autocomplete="off" required></label> 
+					<label><span>Expiration Date*</span><input class="input" name="exprDate" type="date"></label> 
 				</fieldset>
 
-				<input class="BTN" type="submit" value="Order My Swag">
+				<input class="BTN input" type="submit" value="Order My Swag">
 
 				<input type="hidden" value="Conference Registration" name="subject">
 				<input name="redirect" type="hidden" value="thanks.html">

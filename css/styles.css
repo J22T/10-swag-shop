@@ -153,16 +153,16 @@ main h1 {
 }
 
 fieldset {
-  border-radius: .8em;
-  margin: 1rem;
+  border-radius: 1em;
+  margin: 2rem 0;
   border: gray solid 1px;
   padding: 1rem;
 }
 
 legend {
   color: #696969;
-  padding: .5em;
-  margin-left: 6%;
+  padding: 0 .5em;
+  margin: 0 1rem;
   border: none;
 }
 
@@ -206,7 +206,7 @@ label span {
   font-size: 25px;
 }
 
-input {
+.input {
   -webkit-appearance: none;
   display: block;
   color: #555;
@@ -219,6 +219,11 @@ input {
   background-color: #eeeeee;
 }
 
+.material {
+  display: block;
+  padding-left: 1rem;
+}
+
 select {
   font-size: 1rem;
   border: none;
@@ -226,6 +231,7 @@ select {
   padding: 1rem;
   width: 100%;
   max-width: 20rem;
+  background-color: #eeeeee;
 }
 
 input:required {
