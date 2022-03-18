@@ -169,13 +169,9 @@ legend {
 .field, div {
   display: block;
   padding-top: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   color: gray;
   font-size: .8rem;
-}
-
-.field div {
-  margin-left: 1rem;
 }
 
 select {
@@ -185,12 +181,14 @@ select {
 label {
   display: block;
   margin-left: 2rem;
+  margin: 1rem;
 }
 label span {
   display: block;
   font-size: .8em;
   color: gray;
-  padding: .9em 0 .2em 0;
+  padding-left: 1rem;
+  margin: 0.5rem;
 }
 
 .BTN {
@@ -213,6 +211,7 @@ label span {
   color: #555;
   border: none;
   padding: 1rem;
+  margin-right: 1rem;
   border-radius: 50px;
   font-size: 1rem;
   width: 100%;
@@ -239,9 +238,7 @@ input:required:valid {
 }
 
 .radio {
-  width: 15%;
-  color: black;
-  padding: .75rem 0;
+  display: block;
   color: #555;
 }
 

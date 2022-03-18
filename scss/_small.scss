@@ -78,13 +78,9 @@ legend {
 .field, div {
 	display: block;
 	padding-top: 1rem;
-	margin-left: 2rem;
+	margin-left: 1rem;
 	color: $primaryColor;
 	font-size: .8rem;
-}
-
-.field div {
-	margin-left: 1rem;
 }
 
 select{
@@ -94,12 +90,14 @@ select{
 label {
 	display: block;
 	margin-left: 2rem;
+	margin: 1rem;
 
 	span {
 		display: block;
 		font-size: .8em;
 		color: $primaryColor;
-		padding: .9em 0 .2em 0;
+		padding-left: 1rem;
+		margin: 0.5rem;
 	}
 
 }
@@ -123,14 +121,13 @@ label {
 	color: #555;
 	border: none;
 	padding: 1rem;
+	margin-right: 1rem;
 	border-radius: 50px;
 	font-size: 1rem;
 	width: 100%;
 	max-width: 20rem;
 	background-color: lighten($primaryColor, 43%);
 }
-
-
 
 select {
 	font-size: 1rem;
@@ -152,9 +149,7 @@ input:required:valid {
 
 
 .radio {
-	width: 15%;
-	color: black;
-	padding: .75rem 0;
+	display: block;
 	color: #555;
 }
 
