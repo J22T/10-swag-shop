@@ -219,11 +219,6 @@ label span {
   background-color: #eeeeee;
 }
 
-.material {
-  display: block;
-  padding-left: 1rem;
-}
-
 select {
   font-size: 1rem;
   border: none;
@@ -244,11 +239,9 @@ input:required:valid {
 
 .radio {
   width: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  display: block;
   color: black;
+  padding: .75rem 0;
+  color: #555;
 }
 
 /* identifies all required fields */
