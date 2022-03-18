@@ -203,7 +203,8 @@ label span {
   width: 96%;
   max-width: 17rem;
   font-family: "Kanit", sans-serif;
-  font-size: 25px;
+  font-size: 2rem;
+  border: none;
 }
 
 .input {
