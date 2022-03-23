@@ -490,7 +490,7 @@ footer {
 /* end of media query */
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
-  header, nav, body {
+  header, nav, main, body {
     max-width: 64rem;
     margin: auto;
   }
@@ -513,12 +513,20 @@ footer {
   }
 
   /* NAV  */
+  nav {
+    background-color: #56F;
+  }
   nav ul {
-    margin-left: 2%;
+    margin: 0 0 0 2w;
+    padding: 0;
+  }
+  nav ul > li {
+    float: left;
+    list-style: none;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
   }
-  nav ul li {
-    float: left;
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
   }
   nav ul li a {
     display: block;
@@ -532,30 +540,33 @@ footer {
     /*transition*/
     -webkit-transition: background 0.3s linear;
     transition: background 0.3s linear;
-    color: black;
+    color: rgba(255, 255, 255, 0.9);
   }
   nav ul li a:hover {
     background: #3c4fff;
   }
   nav ul li ul {
     /*rules for the sub menu items*/
-    z-index: 99;
+    z-index: 998;
     position: absolute;
     background-color: #8894ff;
     left: -999em;
     /* pushes the menu way off to the side */
-    width: 10em;
+    width: 12em;
   }
   nav ul li ul li {
     /* overides the float and line from the parent ul */
-    float: none;
-    border-right: none;
+    width: 100%;
+    border: none;
     border-top: solid 1px rgba(0, 0, 0, 0.2);
   }
   nav ul li:hover ul {
     /* this displays the menus as drop downs  */
     left: auto;
     margin-left: 0;
+  }
+  nav li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.25);
   }
 }
 /* end of media query */

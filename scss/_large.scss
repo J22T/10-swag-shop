@@ -1,4 +1,4 @@
-header, nav, body{
+header, nav, main, body {
     max-width: 64rem;
     margin: auto;
 }
@@ -34,20 +34,27 @@ header {
 
 /* NAV  */
 nav {
-
+	background-color: $menuColor;
 
 	ul {
-		margin-left: 2%;
-		border-left: 1px solid rgba(0,0,0,0.2);
+		margin: 0 0 0 2w;
+		padding: 0;
+		// border-left: 1px solid rgba(0,0,0,0.2);
 
 	}
-	ul li {
+	ul>li {
 		float: left;
+		list-style: none;
+		border-left: 1px solid rgba(0,0,0,0.2);
+	}
+
+	ul li:last-child {
+		border-right: 1px solid rgba(0,0,0,0.2);
 	}
 
 	ul li a { 
 		display: block;
-		border:none; // undo small screen
+		border: none; // undo small screen
 		border-right: 1px solid rgba(0,0,0,0.2);
 		background: none;
 		font-size: .9em;
@@ -57,7 +64,7 @@ nav {
 		/*transition*/
 		-webkit-transition: background 0.3s linear; 
 		transition: background 0.3s linear;
-		color: black;
+		color: $menuTextColor;
 	}
 
 	ul li a:hover {
@@ -66,22 +73,26 @@ nav {
 	
 	
 	ul li ul { /*rules for the sub menu items*/
-		z-index:99;
+		z-index:998;
 		position: absolute;
 		background-color: lighten($menuColor, 10%);
 		left: -999em; /* pushes the menu way off to the side */
-		width: 10em;
+		width: 12em;
 	}
 
  	ul li ul li { /* overides the float and line from the parent ul */
-		float: none;
-		border-right: none;
+		width: 100%;
+		border: none;
 		border-top: solid 1px rgba(0,0,0,0.2);
 	}
 
  	ul li:hover ul { /* this displays the menus as drop downs  */
 		left: auto;
 		margin-left: 0;
+	}
+
+	li.current-menu-item a {
+		background-color: rgba(0,0,0,0.25);
 	}
 	
 	
