@@ -16,7 +16,7 @@ header {
 	display: flex;
 	align-items: center;
 	background-color: lighten($primaryColor, 30%);
-
+	border-bottom:solid 1px $primaryColor;
 
 	h1 {
 		font-size: 3rem;
@@ -28,12 +28,14 @@ header {
 		padding: 1rem 0 .5rem 2%;
 		display: block;
 	}
-	border-bottom:solid 1px $primaryColor;
+
 }
 
 // end header
 
 nav {
+
+	background-color: $menuColor;
 
 ul li.active a {
 	background-color: $secondaryColor

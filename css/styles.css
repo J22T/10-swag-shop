@@ -137,6 +137,9 @@ header img {
   display: block;
 }
 
+nav {
+  background-color: #56F;
+}
 nav ul li.active a {
   background-color: #A9A9A9;
 }
