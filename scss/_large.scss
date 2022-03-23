@@ -58,7 +58,7 @@ nav {
 		border-right: 1px solid rgba(0,0,0,0.2);
 		background: none;
 		font-size: .9em;
-		padding: .7em .9em;
+		padding: .9em .9em;
 		color: rgba(255,255,255,1);
 		text-decoration: none;
 		/*transition*/
@@ -69,6 +69,12 @@ nav {
 
 	ul li a:hover {
 		background: darken($menuColor,5%);
+	}
+
+	#primaryNAV li.parent > a::before {
+		font-size: .75rem;
+		content: "\25BC";
+		color: rgba(255,255,255,.5);
 	}
 	
 	

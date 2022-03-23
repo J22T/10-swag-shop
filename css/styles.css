@@ -534,7 +534,7 @@ footer {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     background: none;
     font-size: .9em;
-    padding: .7em .9em;
+    padding: .9em .9em;
     color: white;
     text-decoration: none;
     /*transition*/
@@ -544,6 +544,11 @@ footer {
   }
   nav ul li a:hover {
     background: #3c4fff;
+  }
+  nav #primaryNAV li.parent > a::before {
+    font-size: .75rem;
+    content: "\25BC";
+    color: rgba(255, 255, 255, 0.5);
   }
   nav ul li ul {
     /*rules for the sub menu items*/
