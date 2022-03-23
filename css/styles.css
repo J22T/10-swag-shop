@@ -123,18 +123,23 @@ body {
 /* HEADER  */
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   background-color: #cdcdcd;
   border-bottom: solid 1px gray;
 }
 header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
 header img {
   padding: 1rem 0 .5rem 2%;
   display: block;
+}
+header #hamBTN {
+  align-self: flex-end;
+  margin-bottom: 4rem;
 }
 
 nav ul li.active a {
@@ -185,8 +190,7 @@ label {
 }
 label span {
   display: block;
-  font-size: 18px;
-  color: gray;
+  font-size: 1rem;
   padding-left: 1rem;
   margin: 0.5rem;
 }
@@ -302,12 +306,12 @@ footer {
     display: block;
     width: 7rem;
     height: 2.75rem;
-    background-color: #676767;
+    background-color: transparent;
     background-position: 2vw center;
     background-repeat: no-repeat;
     border: 0 none;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 2.5rem;
+    color: black;
   }
 
   #hamBTN span:nth-child(1) {
@@ -330,7 +334,7 @@ footer {
   #primaryNAV {
     height: 0;
     overflow: hidden;
-    width: 20rem;
+    width: auto;
     background-color: #56F;
     /* change the menu color */
     margin: 0;
@@ -366,7 +370,7 @@ footer {
 
   /* Submenus – optional .parent class indicates dropdowns */
   #primaryNav > li:hover > a {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: #56F;
   }
 
   #primaryNAV li.parent > a:after {
@@ -383,7 +387,7 @@ footer {
   /*hide the sub menu items by default*/
   #primaryNAV li ul {
     display: none;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: #56F;
     padding: 0;
   }
 
@@ -403,18 +407,23 @@ footer {
   /* HEADER  */
   header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #cdcdcd;
     border-bottom: solid 1px gray;
   }
   header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
   }
   header img {
     padding: 1rem 0 .5rem 2%;
     display: block;
+  }
+  header #hamBTN {
+    align-self: auto;
+    margin-left: 17rem;
   }
 
   /* MAIN  */
@@ -441,8 +450,8 @@ footer {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     background: none;
     font-size: .9em;
-    padding: .7em .9em;
-    color: white;
+    padding: .9em .9em;
+    color: #56F;
     text-decoration: none;
     /*transition*/
     -webkit-transition: background 0.3s linear;
@@ -454,7 +463,7 @@ footer {
   }
   nav ul li ul {
     /*rules for the sub menu items*/
-    z-index: 99;
+    z-index: 998;
     position: absolute;
     background-color: #8894ff;
     left: -999em;
