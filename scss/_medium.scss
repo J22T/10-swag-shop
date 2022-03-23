@@ -45,9 +45,9 @@ nav {
 
 	background-color: $menuColor;
 
-	#hamBTN {
-		display: none;
-	}
+	// #hamBTN {
+	// 	display: none;
+	// }
 
 
 	// new stuff
@@ -94,6 +94,10 @@ nav {
  	ul li:hover ul { /* this displays the menus as drop downs  */
 		left: auto;
 		margin-left: 0;
+	}
+
+	#primaryNAV {
+		width: auto;
 	}
 	
 	
